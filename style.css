@@ -1,0 +1,192 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #ff5733;
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu a {
+    color: white; /* Text Black */
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background-color: white; /* White Background */
+        color: black; /* Black Text */
+        position: absolute;
+        top: 60px; /* Hamburger ke neeche show hoga */
+        right: 10px;
+        width: 200px;
+        text-align: left;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 1000; /* Background ke uper rehne ke liye */
+    }
+    .navbar-menu.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+    .navbar-menu a {
+        color: black !important; /* Black Text */
+    }
+
+}
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    list-style: none;
+}
+
+
+
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+img{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.05);
+}
+.menu-item {
+    border: none;
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 350px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.rs{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-item h3 {
+    color: #ff5733;
+    font-size: 22px;
+}
+.order-now {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.order-now a{
+    text-decoration: none;
+    color: white;
+}
+.order-now:hover {
+    background-color: #e74c3c;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eb505086;
+    color: white;
+    margin-bottom: 0px;
+    padding: 10px;
+
+}
+.mode{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+.dark{
+    color: black;
+    background-color: silver;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 100px;
+    padding: 5px;
+}
+.dark:hover{
+    background-color: lightgray;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.image-container {
+    position: relative; /* Parent کو relative بنائیں گے تاکہ child absolute ہو سکے */
+    display: inline-block;
+}
+
+.favorite {
+    position: absolute;
+    top: 10px; /* اوپر کی طرف لے جانے کے لیے */
+    right: 10px; /* دائیں طرف رکھنے کے لیے */
+    background: rgba(255, 255, 255, 0.7); /* بیک گراؤنڈ دے کر واضح کرنا */
+    border: none;
+    padding: 8px;
+    border-radius: 50%; /* گول بٹن بنانے کے لیے */
+    cursor: pointer;
+    font-size: 18px;
+}
+#order:hover{
+    background-color: #ff5733;
+
+}

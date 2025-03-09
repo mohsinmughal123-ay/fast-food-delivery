@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <input type="text" class="input" id="selected-item" name="selected-item" readonly placeholder="Enter your item" required>
+            <input type="number" class="input" id="quantity" placeholder="Add Your Quantity" required>
+            <input type="number" class="input" id="total-price"  readonly placeholder="Total Price" required>
+            <input type="text" class="input" id="name" placeholder="Your Name" required>
+            <input type="text" class="input" id="address" placeholder="Your Address" required>
+            <input type="text" class="input" id="phone" placeholder="Your Phone" required>
+            <input type="text" class="input" id="Email" placeholder="Your Email" required>
+            
+            <h4> Payment Method</h4>
+            <label><input type="radio" name="payment-method" value="cod" checked> 🚚 Cash on Delivery</label><br>
+            <label><input type="radio" name="payment-method" value="jazzcash"> JazzCash</label>
+            <input type="text" class="input" id="jazzcash-number" placeholder="Enter JazzCash Number" style="display: none;">
+            <br>
+            <label><input type="radio" name="payment-method" value="easypaisa"> EasyPaisa</label>
+            <input type="text" class="input" id="easypaisa-number" placeholder="Enter EasyPaisa Number" style="display: none;">
+            
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+    <script src="order-script.js"></script>
+</body>
+</html>

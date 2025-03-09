@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fast Food Delivery</h1>
+        <div class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <nav class="navbar-menu">
+                <a href="#menu">Menu</a>
+                <a href="order.html" target="_blank">Order Now</a>
+                <a href="#About">About Us</a>
+                <a href="#Contact">Contact</a>
+                <a href="favorite-list.html" target="_blank">Favorite</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="mode">
+        <button onclick="toggleMode()" class="dark">Dark Mode</button>
+    </div>
+
+    <section id="menu">
+        <h2>Our Special Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <div class="image-container">
+                <img  src="img pizza.jpg "  alt="this is an image">
+                    <button class="favorite" data-item-name="Pizza">🤍</button>
+                </div>
+                 <div class="rs">
+                    <h3>Pizza   Rs.800</h3>
+                    <button class="order-now" data-item-name="Pizza"><a href="order.html" target="_blank">Order Now</a></button>
+                    
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="image-container">
+                    <img  src="img burger.jpg"  alt="this is an image">
+                        <button class="favorite" data-item-name="Burger">🤍</button>
+                    </div>
+                <div class="rs">
+                    <h3> Burger  Rs.400</h3>
+                    <button class="order-now" data-item-name="Burger"><a href="order.html" target="_blank">Order Now</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="image-container">
+                    <img  src="image pasta.jpeg"  alt="this is an image">
+                        <button class="favorite" data-item-name="pasta">🤍</button>
+                    </div>
+                <div class="rs">
+                    <h3> Pasta  Rs.300</h3>
+                    <button class="order-now" data-item-name="Pasta"><a href="order.html" target="_blank">Order Now</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="image-container">
+                    <img  src="img sandwich.jpeg"  alt="this is an image">
+                        <button class="favorite" data-item-name="sandwich">🤍</button>
+                    </div>
+                <div class="rs">
+                    <h3> Sandwich  Rs.200</h3>
+                    <button class="order-now" data-item-name="Sandwich"><a href="order.html" target="_blank">Order Now</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="image-container">
+                    <img  src="img salad.avif"  alt="this is an image">
+                        <button class="favorite" data-item-name="Salad">🤍</button>
+                    </div>
+                <div class="rs">
+                    <h3> Salad  Rs.150</h3>
+                    <button class="order-now" data-item-name="Salad"><a href="order.html" target="_blank">Order Now</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="image-container">
+                    <img  src="img fries.jpg"  alt="this is an image">
+                        <button class="favorite" data-item-name="Fries">🤍</button>
+                    </div>
+                <div class="rs">
+                    <h3>Fries Rs.250</h3>
+                    <button class="order-now" data-item-name="Fries"><a href="order.html" target="_blank">Order Now</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="image-container">
+                    <img  src="img chicken roll.jpg"  alt="this is an image">
+                        <button class="favorite" data-item-name="chicken ROll">🤍</button>
+                    </div>
+                <div class="rs">
+                    <h3> Chiken ROll   Rs.250</h3>
+                    <button class="order-now" data-item-name="Chicken Roll"><a href="order.html" target="_blank">Order Now</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="image-container">
+                    <img  src="img brost.webp"  alt="this is an image">
+                        <button class="favorite" data-item-name="Chicken Brost">🤍</button>
+                    </div>
+                <div class="rs">
+                    <h3>chicken Brost Rs.300</h3>
+                    <button class="order-now" data-item-name="Chicken Brost"><a href="order.html" target="_blank">Order Now</a></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="image-container">
+                    <img  src="img  pancake.jpeg"  alt="this is an image">
+                        <button class="favorite" data-item-name="pancake">🤍</button>
+                    </div>
+                <div class="rs">
+                    <h3> Pancake  Rs.700</h3>
+                    <button class="order-now" data-item-name="pancake"><a href="order.html" target="_blank">Order Now</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div id="About">
+            <h2>About Us</h2>
+            <p>We provide the best and freshest food delivered straight to your doorstep!</p>
+        </div>
+        <div id="Contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@fooddelivery.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
